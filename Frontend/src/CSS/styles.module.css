@@ -1,0 +1,90 @@
+/* --- Collapsible Card Container --- */
+.collapsible {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.collapsible_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Card Details --- */
+.card {
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.interestsHeader {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.interestsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interestItem {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.socialLinks {
+  display: flex;
+  margin: 0 5px;
+}
+
+
+/* --- Dropdown for Delete Button --- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown_content button:hover {
+  background-color: #f1f1f1;
+}

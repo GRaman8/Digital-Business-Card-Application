@@ -1,0 +1,107 @@
+/* --- Vite Default Boilerplate (Good to keep) --- */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: black;
+  background-color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* --- Reusable Button System --- */
+/* Base button style */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.3s;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-details {
+  background-color: grey;
+}
+
+/* Color modifiers */
+.btn-add {
+  background-color: #007BFF; /* Blue */
+}
+
+.btn-edit {
+  background-color: #28a745; /* Green */
+}
+
+.btn-delete {
+  background-color: #dc3545; /* Red */
+}
+
+.btn-social {
+  background-color: purple;
+  color: white;
+}
+
+/* --- Global Form Styles --- */
+.form_container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form_input,
+.form_textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form_textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.notfound_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally centers */
+  align-items: center;    /* Vertically centers */
+  height: 100vh; /* Example height */
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Adds space between each row */
+}
+
+.form-row label {
+  width: 80px; /* Or a width that fits your longest label */
+  margin-right: 10px; /* Space between label and input */
+}
+
+.form-row input {
+  flex-grow: 1; /* Allows the input to fill the remaining space */
+}

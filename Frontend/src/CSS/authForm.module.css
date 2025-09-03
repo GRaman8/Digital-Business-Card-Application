@@ -1,0 +1,74 @@
+/* A wrapper to center the form on the page */
+.auth_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Takes up most of the screen height */
+  padding: 20px;
+}
+
+/* The white box that contains the form */
+.auth_form_wrapper {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #e0e0e0;
+}
+
+/* The "Admin Signup" title */
+.auth_title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* A container for each label and input pair */
+.form_group {
+  margin-bottom: 1.25rem;
+}
+
+.form_label {
+  display: block; /* Puts the label on its own line */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+/* General style for all input fields */
+.form_input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  transition: border-color 0.3s;
+}
+
+.form_input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* The main submit button */
+.auth_button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.auth_button:hover {
+  background-color: #0056b3;
+}
